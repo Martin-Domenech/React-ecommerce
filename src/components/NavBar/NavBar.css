@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(128, 9, 27);
+    align-items: center;
+    font-size: 2rem;
+    gap: 100px;
+    
+}
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.titulo{
+    color: rgb(204, 204, 204);
+}
+.links-navbar{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 1.4rem;
+}
+.links-navbar li a{
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+}
+.links-navbar li a:hover{
+    color: rgb(109, 109, 109);
+}

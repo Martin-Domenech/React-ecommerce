@@ -1,0 +1,9 @@
+.itemlist{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}

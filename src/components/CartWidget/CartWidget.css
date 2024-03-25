@@ -1,0 +1,11 @@
+
+.carrito a{
+    display: flex;
+    color: rgb(204, 204, 204);
+    align-items: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.carrito a:hover{
+    color: rgb(109, 109, 109);
+}
