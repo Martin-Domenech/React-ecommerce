@@ -1,4 +1,3 @@
-import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css"
 import logo from "../../assets/logo.png"
@@ -18,9 +17,9 @@ const NavBar = () => {
                     <li><a href="#">Donde encontrarnos</a></li>
                 </ul>
             </div>
-            
+            <CartWidget />
 
-            <CartWidget></CartWidget>
+            
         </div>
     )
     
