@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
+
+
     return (
         <section className="navbar-x">
             <nav className="navbar navbar-expand-lg ">

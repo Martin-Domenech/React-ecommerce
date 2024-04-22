@@ -505,6 +505,39 @@ export const productos = [
         tipo: 'Tinto',
         origen: 'Mendoza, Argentina'
     },
+    {
+        id: 47, 
+        nombre: 'D.v. Catena Syrah Syrah 750', 
+        precio: 12728, 
+        categoria: 'Syrah', 
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet mauris quis neque mollis, a aliquet turpis ultricies. Donec eu arcu ut dolor sodales posuere. Vivamus non convallis arcu. Sed vestibulum nibh sed mi vulputate, ut molestie dolor blandit. Nulla facilisi. Suspendisse potenti. Sed euismod vestibulum nulla, id eleifend ipsum. Cras nec convallis elit.',
+        img: 'CatenaSyrahSyrah.jpg',
+        stock: 7,
+        tipo: 'Tinto',
+        origen: 'Mendoza, Argentina'
+    },
+    {
+        id: 48, 
+        nombre: 'Lagarde Syrah 2012 750', 
+        precio: 20200, 
+        categoria: 'Syrah', 
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet mauris quis neque mollis, a aliquet turpis ultricies. Donec eu arcu ut dolor sodales posuere. Vivamus non convallis arcu. Sed vestibulum nibh sed mi vulputate, ut molestie dolor blandit. Nulla facilisi. Suspendisse potenti. Sed euismod vestibulum nulla, id eleifend ipsum. Cras nec convallis elit.',
+        img: 'LagardeSyrah2012750.jpg',
+        stock: 7,
+        tipo: 'Tinto',
+        origen: 'Mendoza, Argentina'
+    },
+    {
+        id: 49, 
+        nombre: 'Rutini Colección Syrah 750', 
+        precio: 14560, 
+        categoria: 'Syrah', 
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet mauris quis neque mollis, a aliquet turpis ultricies. Donec eu arcu ut dolor sodales posuere. Vivamus non convallis arcu. Sed vestibulum nibh sed mi vulputate, ut molestie dolor blandit. Nulla facilisi. Suspendisse potenti. Sed euismod vestibulum nulla, id eleifend ipsum. Cras nec convallis elit.',
+        img: 'RutiniColecciónSyrah750.jpg',
+        stock: 7,
+        tipo: 'Tinto',
+        origen: 'Mendoza, Argentina'
+    },
     
 ]
 
