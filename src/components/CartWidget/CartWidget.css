@@ -1,5 +1,5 @@
 
-.carrito a{
+.carrito .carrito-btn{
     display: flex;
     color: rgb(204, 204, 204);
     align-items: center;
@@ -7,5 +7,5 @@
     text-decoration: none;
 }
 .carrito a:hover{
-    color: rgb(109, 109, 109);
+    color: rgb(177, 177, 177);
 }

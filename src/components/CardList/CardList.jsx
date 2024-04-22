@@ -1,32 +1,29 @@
 /* eslint-disable react/prop-types */
 import "./Card.css";
-import { Card, CardBody, CardFooter, Stack, Heading, Divider, Image, Text, Button, ButtonGroup } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+const pathProducts = '../../../public/productosImg/'
+import { FaShoppingCart } from "react-icons/fa";
 
 
-export default function CardList({ nombre, precio, categoria, img }) {
+export default function CardList({ nombre, precio, categoria, img, id }) {
+  const imgProducts = pathProducts + img
+
+
+
   return (
-    <Card maxW="sm">
-      <CardBody>
-        <Image src={img} alt={nombre} borderRadius="lg" />
-        <Stack mt="6" spacing="3">
-          <Heading size="md">{nombre}</Heading>
-          <Text>{categoria}</Text>
-          <Text color="blue.600" fontSize="2xl">
-            ${precio}
-          </Text>
-        </Stack>
-      </CardBody>
-      <Divider />
-      <CardFooter>
-        <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="blue">
-            comprar ahora
-          </Button>
-          <Button variant="ghost" colorScheme="blue">
-            añadir al carito
-          </Button>
-        </ButtonGroup>
-      </CardFooter>
-    </Card>
+    <Link to={`producto/${id}`}>
+      <section className="item">
+        <div className="img-container">
+          <img src={imgProducts} alt={nombre} />
+          </div>
+        <h2 className="title_card">{nombre}</h2>
+        <p className="precio">${precio}</p>
+        <div className="cardFooter">
+          <button className="addCart">
+            <FaShoppingCart className="icon-carrito"/> Añadir al carrito
+          </button>
+        </div>
+      </section>
+    </Link>
   );
 }

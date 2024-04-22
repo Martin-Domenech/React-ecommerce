@@ -1,0 +1,85 @@
+.itemDetailCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.rutaDetail {
+    display: flex;
+    max-width: 1100px;
+    color: grey;
+    font-size: .8rem;
+}
+
+.rutaDetail .iconHome {
+    margin-top: 3px;
+}
+
+.rutaDetail p {
+    padding-left: 5px;
+}
+
+.detailProduct {
+    display: flex;
+}
+
+.detailProduct .imgProd {
+    border: 1px solid rgb(207, 207, 207);
+    width: 40%;
+}
+
+.detailProduct .infoProd {
+    margin-left: 20px;
+}
+
+.detailProduct .infoProd .titleProd {
+    font-size: 1.875rem;
+}
+
+.detailProduct .infoProd .precioProd {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detailProduct .infoProd .descriptionProd {
+    color: grey;
+}
+.detailProduct .infoProd .variedadProd{
+    color: grey;
+    list-style: none;
+}
+.detailProduct .infoProd .variedadProd span{
+    font-weight: bold;   
+}
+
+.detailProduct .comprar{
+    display: flex;
+    align-items: center;
+    gap:  15px;
+    border-top: solid 1px rgb(199, 199, 199);
+    border-bottom: solid 1px rgb(199, 199, 199);
+    padding: 20px 0 20px 0;
+}
+.detailProduct .comprar .btnMoreLess{
+    margin-left: 10%;
+}
+.detailProduct .comprar .btnBuy{
+    background-color: #001844;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(197, 197, 197);
+}
+.detailProduct .comprar .btnBuy .icon-cart{
+    margin-right: 10px;
+}
+.detailProduct .comprar .btnBuy:hover{
+    background-color: #002261;
+}

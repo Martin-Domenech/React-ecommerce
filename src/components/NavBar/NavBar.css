@@ -1,32 +1,62 @@
-.navbar{
+.navbar-x{
     display: flex;
     justify-content: center;
-    background-color: rgb(128, 9, 27);
+    background-color: #001844;
+    border-bottom: 1px solid black;
+}
+.container-navbar{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    gap: 100px;
+    gap: 30px;
     
 }
-.logo-titulo{
-    display: flex;
-    align-items: center;
+#navbarCollapseButton .navbar-toggler-icon {
+    background-color: transparent; 
+    border-color: white; 
+    outline-color: white; 
+    width: 24px; 
+    height: 24px; 
 }
-.logo{
-    width: 130px;
+#navbarCollapseButton .navbar-toggler-icon::before {
+    content: '\2630'; 
+    font-size: 24px; 
+    font-weight: bold; 
 }
-.titulo{
-    color: rgb(204, 204, 204);
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40;
+    color: #ffffff;
 }
+
+
+.logoNavBar{
+    width: 20vh;
+}
+
+
 .links-navbar{
-    display: flex;
-    list-style: none;
     gap: 25px;
     font-size: 1.4rem;
 }
-.links-navbar li a{
+.links-navbar li {
     text-decoration: none;
     color: rgb(204, 204, 204);
 }
-.links-navbar li a:hover{
-    color: rgb(109, 109, 109);
+.links-navbar li:hover{
+    color: rgb(177, 177, 177);
+}
+.input{
+    display: flex;
+    gap: 30px;
+    padding-left: 30px;
+}
+.navbar-x .btn-buscar{
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+.navbar-x .btn-buscar:hover{
+    background-color: #00102e;
+    border: solid 1px grey;
 }

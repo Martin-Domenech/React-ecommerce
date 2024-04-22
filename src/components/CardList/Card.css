@@ -1,0 +1,63 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgba(214, 214, 214, 0.568);
+    border-radius: 5px;
+}
+.item:hover{
+    box-shadow:  0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.item .img-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.item img{
+    border-radius: 5px;
+    width: 100%;
+}
+.item .title_card{
+    padding-top: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+}
+.item .precio{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: end;
+}
+.item .cardFooter{
+    margin: 0px 0 5px 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid grey;
+    padding: 20px 0 10px 0;
+}
+
+.item .addCart{
+    display: flex;
+    background-color: #001844;
+    color: azure;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.item .addCart .icon-carrito{
+    width: 30px;
+    margin-top: 5px;
+}
+.item .addCart:hover{
+    background-color: #233b69;
+}
+.imgHeader{
+    display: flex;
+    justify-content: center;
+    max-height: 300px;
+}
