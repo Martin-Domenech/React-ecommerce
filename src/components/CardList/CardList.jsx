@@ -5,7 +5,7 @@ const pathProducts = '../../../public/productosImg/'
 import { FaShoppingCart } from "react-icons/fa";
 
 
-export default function CardList({ nombre, precio, categoria, img, id }) {
+export default function CardList({ nombre, precio, img, id }) {
   const imgProducts = pathProducts + img
 
 
