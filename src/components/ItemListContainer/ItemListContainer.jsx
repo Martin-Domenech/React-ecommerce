@@ -7,13 +7,15 @@ import imgEnvio from '../../assets/envio.jpg'
 import { ItemList } from "../ItemList/ItemList.jsx";
 import { ItemPaginaPrincipal } from "../ItemsPaginaPrincipal/ItemsPaginaPrincipal.jsx"
 import { useLocation } from 'react-router-dom';
-import { useState, useEffect } from "react"
-
+import { useState, useEffect} from "react"
+import { db } from "../../config/firebase.js"
 
 
 const ItemListContainer = () => {
     const location = useLocation()
     const [paginaPrincipal, setPaginaPrincipal] = useState(true)
+
+    
 
     useEffect(()=>{
         const currentPath = location.pathname

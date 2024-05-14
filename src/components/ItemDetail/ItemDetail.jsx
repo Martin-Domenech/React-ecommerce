@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getProductsId } from '../../../data/asyncMocks'
 import { ButtonMoreLess } from '../ButtonMoreLess/ButtonMoreLess'
@@ -7,6 +7,7 @@ import { IoHomeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Footer } from '../Footer/Footer';
 import './ItemDetail.css'
+import Context from '../../context/CartContext';
 const imgPath = '../../../public/productosImg/'
 
 
@@ -15,7 +16,21 @@ export const ItemDetail = () => {
     const[producto, setProducto] = useState({})
     const { productoId } = useParams()
     const image = imgPath + producto.img
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
+
+    const { addItem } = useContext(Context)
+
+    const onAdd = (count) => {
+        const { id, nombre, precio, stock, img } = producto
+        const item = {
+            id,
+            nombre,
+            precio,
+            stock,
+            img
+        }
+        addItem(item, count)
+    }
 
     useEffect(() => {
 
@@ -48,7 +63,10 @@ export const ItemDetail = () => {
                             <div className='btnMoreLess'>
                             <ButtonMoreLess  producto={producto} count={count} setCount={setCount}/>
                             </div>
-                            <button type='button' className='btnBuy'> <FaShoppingCart className='icon-cart'/>Comprar</button>
+                            <Link to='/cart'>
+                            <button type='button' className='btnBuy' onClick={() => onAdd(count)} > <FaShoppingCart className='icon-cart'/>Comprar</button>
+                            </Link>
+                            
                         </div>
                     </div>
                 </div>
