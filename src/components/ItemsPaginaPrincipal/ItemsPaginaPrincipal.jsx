@@ -1,25 +1,43 @@
 import './ItemsPaginaPrincipal.css'
 import Card from '../Card/Card.jsx'
 import { useState, useEffect } from 'react' 
-import { getProducts, getProductsCategory } from '../../../data/asyncMocks.js'
 import { useParams } from 'react-router-dom'
 import imgCuotas from '../../assets/cuotas.jpg'
 import { Footer } from '../Footer/Footer.jsx'
 import { Flex, Spinner } from '@chakra-ui/react'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../config/firebase.js'
 
 export const ItemPaginaPrincipal = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const { categoriaId } = useParams()
 
-    useEffect(()=>{
-        const dataProductos = categoriaId ? getProductsCategory(categoriaId) : getProducts()
-
-        dataProductos
-        .then((el) => setProducts(el))
-        .catch((error) => console.log(error))
-        .finally(() => setLoading(false))
-    }, [categoriaId])
+    useEffect(() => {
+        setLoading(true)
+        const getData = async () => {
+          const coleccion = collection(db, 'productos')
+    
+          const queryRef = !categoriaId ? 
+          coleccion 
+          : 
+          query(coleccion, where('categoria', '==', categoriaId))
+    
+          const response = await getDocs(queryRef)
+    
+          const productos = response.docs.map((doc) => {
+            const newItem = {
+              ...doc.data(),
+              id: doc.id
+            }
+            return newItem
+          })
+          setProducts(productos)
+          setLoading(false)
+    
+        }
+        getData()
+      }, [categoriaId])
 
     return(
         <div>
