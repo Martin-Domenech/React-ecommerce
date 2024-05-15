@@ -1,12 +1,34 @@
-# React + Vite
+# Rincon de Vinos - Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de ecommerce para una tienda de vinos, construida con React y Vite. La aplicación permite a los usuarios explorar diferentes vinos, ver detalles de los productos, añadirlos al carrito y proceder al pago.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Exploración de Productos**: Los usuarios pueden navegar por una amplia gama de vinos.
+- **Detalles del Producto**: Vista detallada de cada vino con información como nombre, tipo y precio.
+- **Carrito de Compras**: Añadir, eliminar y actualizar la cantidad de productos en el carrito.
+- **Proceso de generacion de orden**: Crear una orden por cada carrito.
+- **Autenticación**: Formulario con nombre email y nmumero de telefono.
+- **Firebase**: Base de datos y manejo de backend con firebase.
 
 
+## Tecnologías Utilizadas
 
-rfc
+- **React**: Biblioteca de JavaScript para la construcción de interfaces de usuario.
+- **Vite**: Herramienta de desarrollo y construcción rápida para proyectos de frontend.
+- **React Router**: Navegación y enrutamiento para aplicaciones de una sola página.
+- **CSS Modules**: Estilizado de componentes para evitar colisiones de nombres de clases.
+- **Firebase**: Base de datos y manejo de backend con firebase.
+
+## Requisitos Previos
+
+- Node.js
+- npm
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Martin-Domenech/React-ecommerce.git
+   cd React-ecommerce
+   npm i
