@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./Card.css";
 import { Link } from "react-router-dom";
-const pathProducts = '../../../public/productosImg/'
+const pathProducts = '/productosImg/'
 import { FaShoppingCart } from "react-icons/fa";
 
 
 export default function Card ({ nombre, precio, img, id }) {
   const imgProducts = pathProducts + img
-
   return (
     <Link to={`producto/${id}`}>
       <section className="item">
