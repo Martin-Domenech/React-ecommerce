@@ -9,7 +9,7 @@ import { Footer } from '../Footer/Footer';
 import './ItemDetail.css'
 import Context from '../../context/CartContext';
 import { doc, getDoc } from 'firebase/firestore';
-const imgPath = '../../../public/productosImg/'
+const imgPath = '/productosImg/'
 import { Flex, Spinner } from '@chakra-ui/react'
 import { db } from '../../config/firebase.js'
 
