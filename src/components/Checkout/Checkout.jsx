@@ -13,7 +13,6 @@ import {
     Box,
     Text,
   } from '@chakra-ui/react'
-const pathProducts = '../../../public/productosImg/'
 import { Timestamp, addDoc, collection, doc, getDoc, updateDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase' 
 import Context from '../../context/CartContext'

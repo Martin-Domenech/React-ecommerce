@@ -1,7 +1,6 @@
 import './ItemList.css'
 import Card from '../Card/Card.jsx'
 import { useState, useEffect } from 'react' 
-import { getProducts, getProductsCategory } from "../../../data/asyncMocks.js"
 import { useParams } from "react-router-dom"
 import { Footer } from '../Footer/Footer.jsx'
 import { Flex, Spinner } from '@chakra-ui/react'
@@ -35,7 +34,6 @@ export const ItemList = () => {
           })
           setProducts(productos)
           setLoading(false)
-    
         }
         getData()
       }, [categoriaId])

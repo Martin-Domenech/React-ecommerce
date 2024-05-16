@@ -8,7 +8,7 @@ import { ItemList } from "../ItemList/ItemList.jsx";
 import { ItemPaginaPrincipal } from "../ItemsPaginaPrincipal/ItemsPaginaPrincipal.jsx"
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect} from "react"
-import { db } from "../../config/firebase.js"
+
 
 
 const ItemListContainer = () => {
@@ -20,14 +20,9 @@ const ItemListContainer = () => {
     useEffect(()=>{
         const currentPath = location.pathname
         if (currentPath === '/'){
-            setTimeout(() => {
-                setPaginaPrincipal(true);
-            }, 900);
-
+            setPaginaPrincipal(true)
         }else{
-            setTimeout(() => {
-                setPaginaPrincipal(false);
-            }, 1100);
+                setPaginaPrincipal(false)
         }
     }, [location])
 
