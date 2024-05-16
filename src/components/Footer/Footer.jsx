@@ -20,8 +20,7 @@ export const Footer = () => {
                     <a href="#"><i className="fa-brands fa-twitter"></i></a>
                     <a href="#"><i className="fa-brands fa-google-plus"></i></a>
                     <a href="#"><i className="fa-brands fa-youtube"></i></a>
-                </div>
-                
+                </div> 
             </div>
             <div className="footerBottom">
                 <p>Copyright &copy;2023; Designed by <span className="designer">Martin Domenech</span></p>

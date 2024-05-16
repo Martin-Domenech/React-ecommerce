@@ -14,14 +14,12 @@ import { Flex, Spinner } from '@chakra-ui/react'
 import { db } from '../../config/firebase.js'
 
 
-
 export const ItemDetail = () => {
     const[producto, setProducto] = useState({})
     const [ loading, setLoading ] = useState(true)
     const { productoId } = useParams()
     const image = imgPath + producto.img
     const [count, setCount] = useState(1)
-
     const { addItem } = useContext(Context)
 
     const onAdd = (count) => {

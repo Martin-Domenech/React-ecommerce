@@ -144,7 +144,6 @@ export const ItemPaginaPrincipal = () => {
                 <Footer />
             </section>
             }
-            
         </div>
     )
 }

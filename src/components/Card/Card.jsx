@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const pathProducts = '/productosImg/'
 import { FaShoppingCart } from "react-icons/fa";
 
-
 export default function Card ({ nombre, precio, img, id }) {
   const imgProducts = pathProducts + img
   return (

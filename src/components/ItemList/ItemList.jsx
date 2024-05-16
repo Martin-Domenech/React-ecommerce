@@ -7,11 +7,11 @@ import { Flex, Spinner } from '@chakra-ui/react'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../config/firebase.js'
 
+
 export const ItemList = () => {
     const [products, setProducts] = useState([])
     const [ loading, setLoading ] = useState(true)
     const { categoriaId } = useParams()
-
 
     useEffect(() => {
         setLoading(true)
@@ -78,7 +78,5 @@ export const ItemList = () => {
             </section>
         }
         </div>
-            
-        
     )
 }

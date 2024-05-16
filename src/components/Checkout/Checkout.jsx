@@ -19,7 +19,6 @@ import Context from '../../context/CartContext'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
-
 const Checkout = () => {
     const [ user, setUser ] = useState({
         name: '',
@@ -116,7 +115,6 @@ const Checkout = () => {
         }
     }
 
-
   return (
     <Flex direction={'column'} justify={'center'} align={'center'} mt={10}>
         <Box>
@@ -135,5 +133,4 @@ const Checkout = () => {
     </Flex>
   )
 }
-
 export default Checkout

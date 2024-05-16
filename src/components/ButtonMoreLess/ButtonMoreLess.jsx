@@ -1,9 +1,8 @@
 import './ButtonMoreLess.css'
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-export const ButtonMoreLess = ({producto, count, setCount}) => {
 
-    
+export const ButtonMoreLess = ({producto, count, setCount}) => {
     const handleClickUp = () => {
         if (count < producto.stock ){
             setCount(prevCount => prevCount + 1)
@@ -14,7 +13,6 @@ export const ButtonMoreLess = ({producto, count, setCount}) => {
             setCount(prevCount => prevCount -1)
         }
     }
-
     return(
         <div className='buttonmoreless'>
             <button onClick={handleClickDown} type='button' className='btn-left'><FaMinus /></button>

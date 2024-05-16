@@ -9,16 +9,12 @@ import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-
-
 function App() {
   return (
-
     <ChakraProvider>
       <ContextProvider>
         <BrowserRouter>
           <NavBar />
-
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='categoria/:categoriaId' element={<ItemListContainer />} />

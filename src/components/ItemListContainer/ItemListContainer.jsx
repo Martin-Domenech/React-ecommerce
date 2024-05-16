@@ -15,8 +15,6 @@ const ItemListContainer = () => {
     const location = useLocation()
     const [paginaPrincipal, setPaginaPrincipal] = useState(true)
 
-    
-
     useEffect(()=>{
         const currentPath = location.pathname
         if (currentPath === '/'){
@@ -25,7 +23,6 @@ const ItemListContainer = () => {
                 setPaginaPrincipal(false)
         }
     }, [location])
-
 
     return (
          <section className="itemListContainer">
